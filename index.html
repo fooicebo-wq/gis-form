@@ -89,7 +89,7 @@
     .input-wrapper {
         flex-grow: 1;
     }
-    input[type="text"], input[type="tel"], textarea {
+    input[type="text"], input[type="tel"], input[type="email"], textarea {
         width: 100%;
         border: none;
         border-bottom: 1px solid #e5e5e5;
@@ -101,7 +101,7 @@
         box-sizing: border-box;
         transition: border-color 0.3s;
     }
-    input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
+    input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
         border-bottom-color: #a58e6f;
     }
     textarea {
@@ -233,6 +233,22 @@
             <label class="group-label">電話 <span class="required-star">*</span></label>
             <div class="input-wrapper">
                 <input type="tel" name="phone" required>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label class="group-label">Email <span class="required-star">*</span></label>
+            <div class="input-wrapper">
+                <input type="email" name="email" placeholder="送出後會寄確認信給您" required>
+            </div>
+        </div>
+
+        <!-- LINE ID -->
+        <div class="form-group">
+            <label class="group-label">LINE ID<br><span style="font-size:13px;color:#999;">(選填)</span></label>
+            <div class="input-wrapper">
+                <input type="text" name="line_id" placeholder="方便用 LINE 與您聯繫">
             </div>
         </div>
 
